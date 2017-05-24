@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9351ED5FB78000789DE /* AppDelegate.swift */; };
+		C5DDE9381ED5FB78000789DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9371ED5FB78000789DE /* ViewController.swift */; };
+		C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9391ED5FB78000789DE /* Main.storyboard */; };
+		C5DDE93D1ED5FB78000789DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE93C1ED5FB78000789DE /* Assets.xcassets */; };
+		C5DDE9401ED5FB78000789DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */; };
+		C5DDE94B1ED5FB78000789DE /* Redcupa_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE94A1ED5FB78000789DE /* Redcupa_iosTests.swift */; };
+		C5DDE9561ED5FB78000789DE /* Redcupa_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9551ED5FB78000789DE /* Redcupa_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5DDE9471ED5FB78000789DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5DDE92A1ED5FB78000789DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5DDE9311ED5FB78000789DE;
+			remoteInfo = Redcupa_ios;
+		};
+		C5DDE9521ED5FB78000789DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5DDE92A1ED5FB78000789DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5DDE9311ED5FB78000789DE;
+			remoteInfo = Redcupa_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redcupa_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5DDE9351ED5FB78000789DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5DDE9371ED5FB78000789DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5DDE93A1ED5FB78000789DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5DDE93C1ED5FB78000789DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5DDE93F1ED5FB78000789DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5DDE9411ED5FB78000789DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DDE9461ED5FB78000789DE /* Redcupa_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Redcupa_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5DDE94A1ED5FB78000789DE /* Redcupa_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redcupa_iosTests.swift; sourceTree = "<group>"; };
+		C5DDE94C1ED5FB78000789DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DDE9511ED5FB78000789DE /* Redcupa_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Redcupa_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5DDE9551ED5FB78000789DE /* Redcupa_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redcupa_iosUITests.swift; sourceTree = "<group>"; };
+		C5DDE9571ED5FB78000789DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5DDE92F1ED5FB78000789DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE9431ED5FB78000789DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE94E1ED5FB78000789DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5DDE9291ED5FB78000789DE = {
+			isa = PBXGroup;
+			children = (
+				C5DDE9341ED5FB78000789DE /* Redcupa_ios */,
+				C5DDE9491ED5FB78000789DE /* Redcupa_iosTests */,
+				C5DDE9541ED5FB78000789DE /* Redcupa_iosUITests */,
+				C5DDE9331ED5FB78000789DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5DDE9331ED5FB78000789DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */,
+				C5DDE9461ED5FB78000789DE /* Redcupa_iosTests.xctest */,
+				C5DDE9511ED5FB78000789DE /* Redcupa_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5DDE9341ED5FB78000789DE /* Redcupa_ios */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDE9351ED5FB78000789DE /* AppDelegate.swift */,
+				C5DDE9371ED5FB78000789DE /* ViewController.swift */,
+				C5DDE9391ED5FB78000789DE /* Main.storyboard */,
+				C5DDE93C1ED5FB78000789DE /* Assets.xcassets */,
+				C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */,
+				C5DDE9411ED5FB78000789DE /* Info.plist */,
+			);
+			path = Redcupa_ios;
+			sourceTree = "<group>";
+		};
+		C5DDE9491ED5FB78000789DE /* Redcupa_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDE94A1ED5FB78000789DE /* Redcupa_iosTests.swift */,
+				C5DDE94C1ED5FB78000789DE /* Info.plist */,
+			);
+			path = Redcupa_iosTests;
+			sourceTree = "<group>";
+		};
+		C5DDE9541ED5FB78000789DE /* Redcupa_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDE9551ED5FB78000789DE /* Redcupa_iosUITests.swift */,
+				C5DDE9571ED5FB78000789DE /* Info.plist */,
+			);
+			path = Redcupa_iosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5DDE9311ED5FB78000789DE /* Redcupa_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5DDE95A1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_ios" */;
+			buildPhases = (
+				C5DDE92E1ED5FB78000789DE /* Sources */,
+				C5DDE92F1ED5FB78000789DE /* Frameworks */,
+				C5DDE9301ED5FB78000789DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Redcupa_ios;
+			productName = Redcupa_ios;
+			productReference = C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5DDE9451ED5FB78000789DE /* Redcupa_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5DDE95D1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosTests" */;
+			buildPhases = (
+				C5DDE9421ED5FB78000789DE /* Sources */,
+				C5DDE9431ED5FB78000789DE /* Frameworks */,
+				C5DDE9441ED5FB78000789DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5DDE9481ED5FB78000789DE /* PBXTargetDependency */,
+			);
+			name = Redcupa_iosTests;
+			productName = Redcupa_iosTests;
+			productReference = C5DDE9461ED5FB78000789DE /* Redcupa_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5DDE9501ED5FB78000789DE /* Redcupa_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5DDE9601ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosUITests" */;
+			buildPhases = (
+				C5DDE94D1ED5FB78000789DE /* Sources */,
+				C5DDE94E1ED5FB78000789DE /* Frameworks */,
+				C5DDE94F1ED5FB78000789DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5DDE9531ED5FB78000789DE /* PBXTargetDependency */,
+			);
+			name = Redcupa_iosUITests;
+			productName = Redcupa_iosUITests;
+			productReference = C5DDE9511ED5FB78000789DE /* Redcupa_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5DDE92A1ED5FB78000789DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Redcupa;
+				TargetAttributes = {
+					C5DDE9311ED5FB78000789DE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WU4JCC59KB;
+						ProvisioningStyle = Automatic;
+					};
+					C5DDE9451ED5FB78000789DE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WU4JCC59KB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5DDE9311ED5FB78000789DE;
+					};
+					C5DDE9501ED5FB78000789DE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WU4JCC59KB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5DDE9311ED5FB78000789DE;
+					};
+				};
+			};
+			buildConfigurationList = C5DDE92D1ED5FB78000789DE /* Build configuration list for PBXProject "Redcupa_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5DDE9291ED5FB78000789DE;
+			productRefGroup = C5DDE9331ED5FB78000789DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5DDE9311ED5FB78000789DE /* Redcupa_ios */,
+				C5DDE9451ED5FB78000789DE /* Redcupa_iosTests */,
+				C5DDE9501ED5FB78000789DE /* Redcupa_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5DDE9301ED5FB78000789DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DDE9401ED5FB78000789DE /* LaunchScreen.storyboard in Resources */,
+				C5DDE93D1ED5FB78000789DE /* Assets.xcassets in Resources */,
+				C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE9441ED5FB78000789DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE94F1ED5FB78000789DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5DDE92E1ED5FB78000789DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DDE9381ED5FB78000789DE /* ViewController.swift in Sources */,
+				C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE9421ED5FB78000789DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DDE94B1ED5FB78000789DE /* Redcupa_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DDE94D1ED5FB78000789DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DDE9561ED5FB78000789DE /* Redcupa_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5DDE9481ED5FB78000789DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5DDE9311ED5FB78000789DE /* Redcupa_ios */;
+			targetProxy = C5DDE9471ED5FB78000789DE /* PBXContainerItemProxy */;
+		};
+		C5DDE9531ED5FB78000789DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5DDE9311ED5FB78000789DE /* Redcupa_ios */;
+			targetProxy = C5DDE9521ED5FB78000789DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5DDE9391ED5FB78000789DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5DDE93A1ED5FB78000789DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5DDE93F1ED5FB78000789DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5DDE9581ED5FB78000789DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5DDE9591ED5FB78000789DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5DDE95B1ED5FB78000789DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C5DDE95C1ED5FB78000789DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C5DDE95E1ED5FB78000789DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redcupa_ios.app/Redcupa_ios";
+			};
+			name = Debug;
+		};
+		C5DDE95F1ED5FB78000789DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redcupa_ios.app/Redcupa_ios";
+			};
+			name = Release;
+		};
+		C5DDE9611ED5FB78000789DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Redcupa_ios;
+			};
+			name = Debug;
+		};
+		C5DDE9621ED5FB78000789DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WU4JCC59KB;
+				INFOPLIST_FILE = Redcupa_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.redcupa.Redcupa-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Redcupa_ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5DDE92D1ED5FB78000789DE /* Build configuration list for PBXProject "Redcupa_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DDE9581ED5FB78000789DE /* Debug */,
+				C5DDE9591ED5FB78000789DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5DDE95A1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DDE95B1ED5FB78000789DE /* Debug */,
+				C5DDE95C1ED5FB78000789DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5DDE95D1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DDE95E1ED5FB78000789DE /* Debug */,
+				C5DDE95F1ED5FB78000789DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5DDE9601ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DDE9611ED5FB78000789DE /* Debug */,
+				C5DDE9621ED5FB78000789DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5DDE92A1ED5FB78000789DE /* Project object */;
+}
