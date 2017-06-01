@@ -19,10 +19,19 @@ class ViewController: UIViewController {
 
     @IBAction func loginButtonClicked(_ sender: Any) {
         let facebookLogin = FBSDKLoginManager()
-        facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler: {(FBSDKLoginManagerLoginResult, facebookError) -> Void in  });
-    }
-    
-    override func didReceiveMemoryWarning() {
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler: {(FBSDKLoginManagerLoginResult, facebookError) -> Void in
+            if facebookError != nil {
+                print("Facebook Login failed 😕 ")
+            } else if (FBSDKLoginManagerLoginResult!.isCancelled){
+                print("login cncelled")
+            } else{
+                print("youre in 😍")
+                //Trigger Segue
+                
+                
+            }
+        });
+            
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
