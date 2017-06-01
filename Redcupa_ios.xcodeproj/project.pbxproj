@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CC7EEE50AD9F4EC2B4C805F /* Pods_Redcupa_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F102711477212A68CA3FF26 /* Pods_Redcupa_iosTests.framework */; };
+		A8F7CF8469D342EE3E51AF5A /* Pods_Redcupa_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC951B224B84576875C91984 /* Pods_Redcupa_ios.framework */; };
 		C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9351ED5FB78000789DE /* AppDelegate.swift */; };
 		C5DDE9381ED5FB78000789DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9371ED5FB78000789DE /* ViewController.swift */; };
 		C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9391ED5FB78000789DE /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		C5DDE9401ED5FB78000789DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */; };
 		C5DDE94B1ED5FB78000789DE /* Redcupa_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE94A1ED5FB78000789DE /* Redcupa_iosTests.swift */; };
 		C5DDE9561ED5FB78000789DE /* Redcupa_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9551ED5FB78000789DE /* Redcupa_iosUITests.swift */; };
+		C5DDE9651ED5FDA7000789DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9641ED5FDA7000789DE /* GoogleService-Info.plist */; };
+		FFCA4DEA92370934ED8777B5 /* Pods_Redcupa_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0BB739C5B4163803045ECD /* Pods_Redcupa_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F102711477212A68CA3FF26 /* Pods_Redcupa_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redcupa_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F611034C20A959AF68BA50E /* Pods-Redcupa_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosTests/Pods-Redcupa_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0BB739C5B4163803045ECD /* Pods_Redcupa_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redcupa_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECFEC0840C1DB9485A9F9D4 /* Pods-Redcupa_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_ios/Pods-Redcupa_ios.release.xcconfig"; sourceTree = "<group>"; };
+		5F53034D698566D7AA2CD44D /* Pods-Redcupa_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_ios/Pods-Redcupa_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		94203BA67EC07EA308C3DAA1 /* Pods-Redcupa_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosTests/Pods-Redcupa_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		ACE137E69B966B8C65A996DD /* Pods-Redcupa_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosUITests/Pods-Redcupa_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redcupa_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DDE9351ED5FB78000789DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DDE9371ED5FB78000789DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,10 @@
 		C5DDE9511ED5FB78000789DE /* Redcupa_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Redcupa_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DDE9551ED5FB78000789DE /* Redcupa_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redcupa_iosUITests.swift; sourceTree = "<group>"; };
 		C5DDE9571ED5FB78000789DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DDE9641ED5FDA7000789DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5FCAFB11EE0673F00BA7C6F /* Redcupa_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Redcupa_ios.entitlements; sourceTree = "<group>"; };
+		E4DDE844252C1A27F9F7A492 /* Pods-Redcupa_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosUITests/Pods-Redcupa_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC951B224B84576875C91984 /* Pods_Redcupa_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redcupa_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F7CF8469D342EE3E51AF5A /* Pods_Redcupa_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC7EEE50AD9F4EC2B4C805F /* Pods_Redcupa_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +85,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCA4DEA92370934ED8777B5 /* Pods_Redcupa_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2198D41A165B9C72ACE63CB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F53034D698566D7AA2CD44D /* Pods-Redcupa_ios.debug.xcconfig */,
+				5ECFEC0840C1DB9485A9F9D4 /* Pods-Redcupa_ios.release.xcconfig */,
+				1F611034C20A959AF68BA50E /* Pods-Redcupa_iosTests.debug.xcconfig */,
+				94203BA67EC07EA308C3DAA1 /* Pods-Redcupa_iosTests.release.xcconfig */,
+				ACE137E69B966B8C65A996DD /* Pods-Redcupa_iosUITests.debug.xcconfig */,
+				E4DDE844252C1A27F9F7A492 /* Pods-Redcupa_iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3507FEA05EC389F306515C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC951B224B84576875C91984 /* Pods_Redcupa_ios.framework */,
+				0F102711477212A68CA3FF26 /* Pods_Redcupa_iosTests.framework */,
+				5B0BB739C5B4163803045ECD /* Pods_Redcupa_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5DDE9291ED5FB78000789DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +122,8 @@
 				C5DDE9491ED5FB78000789DE /* Redcupa_iosTests */,
 				C5DDE9541ED5FB78000789DE /* Redcupa_iosUITests */,
 				C5DDE9331ED5FB78000789DE /* Products */,
+				2198D41A165B9C72ACE63CB2 /* Pods */,
+				BC3507FEA05EC389F306515C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +140,11 @@
 		C5DDE9341ED5FB78000789DE /* Redcupa_ios */ = {
 			isa = PBXGroup;
 			children = (
+				C5FCAFB11EE0673F00BA7C6F /* Redcupa_ios.entitlements */,
 				C5DDE9351ED5FB78000789DE /* AppDelegate.swift */,
 				C5DDE9371ED5FB78000789DE /* ViewController.swift */,
 				C5DDE9391ED5FB78000789DE /* Main.storyboard */,
-				C5DDE93C1ED5FB78000789DE /* Assets.xcassets */,
-				C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */,
-				C5DDE9411ED5FB78000789DE /* Info.plist */,
+				C5DDE9631ED5FCDE000789DE /* Support Files */,
 			);
 			path = Redcupa_ios;
 			sourceTree = "<group>";
@@ -125,6 +167,17 @@
 			path = Redcupa_iosUITests;
 			sourceTree = "<group>";
 		};
+		C5DDE9631ED5FCDE000789DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDE93C1ED5FB78000789DE /* Assets.xcassets */,
+				C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */,
+				C5DDE9641ED5FDA7000789DE /* GoogleService-Info.plist */,
+				C5DDE9411ED5FB78000789DE /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DDE95A1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_ios" */;
 			buildPhases = (
+				67F69FEDA29E65994AC1663B /* [CP] Check Pods Manifest.lock */,
 				C5DDE92E1ED5FB78000789DE /* Sources */,
 				C5DDE92F1ED5FB78000789DE /* Frameworks */,
 				C5DDE9301ED5FB78000789DE /* Resources */,
+				42F9018FAC4F66D9D1ACBE0C /* [CP] Embed Pods Frameworks */,
+				826B4F8FF45D073508550AF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DDE95D1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosTests" */;
 			buildPhases = (
+				4ADC768BE79E7DB5E2D5D1FE /* [CP] Check Pods Manifest.lock */,
 				C5DDE9421ED5FB78000789DE /* Sources */,
 				C5DDE9431ED5FB78000789DE /* Frameworks */,
 				C5DDE9441ED5FB78000789DE /* Resources */,
+				68796CFB6982494FA47D7F95 /* [CP] Embed Pods Frameworks */,
+				1064C13335E3D4D196242B41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DDE9601ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosUITests" */;
 			buildPhases = (
+				8474FAE969CE6FFC0FE18925 /* [CP] Check Pods Manifest.lock */,
 				C5DDE94D1ED5FB78000789DE /* Sources */,
 				C5DDE94E1ED5FB78000789DE /* Frameworks */,
 				C5DDE94F1ED5FB78000789DE /* Resources */,
+				310E45CD8EFDF759BFF4D15B /* [CP] Embed Pods Frameworks */,
+				1ED000786761742213543E60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +257,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WU4JCC59KB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					C5DDE9451ED5FB78000789DE = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -236,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DDE9401ED5FB78000789DE /* LaunchScreen.storyboard in Resources */,
+				C5DDE9651ED5FDA7000789DE /* GoogleService-Info.plist in Resources */,
 				C5DDE93D1ED5FB78000789DE /* Assets.xcassets in Resources */,
 				C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */,
 			);
@@ -256,6 +327,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1064C13335E3D4D196242B41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_iosTests/Pods-Redcupa_iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ED000786761742213543E60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_iosUITests/Pods-Redcupa_iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		310E45CD8EFDF759BFF4D15B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_iosUITests/Pods-Redcupa_iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F9018FAC4F66D9D1ACBE0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_ios/Pods-Redcupa_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ADC768BE79E7DB5E2D5D1FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67F69FEDA29E65994AC1663B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68796CFB6982494FA47D7F95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_iosTests/Pods-Redcupa_iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826B4F8FF45D073508550AF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redcupa_ios/Pods-Redcupa_ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8474FAE969CE6FFC0FE18925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5DDE92E1ED5FB78000789DE /* Sources */ = {
@@ -415,6 +624,7 @@
 		};
 		C5DDE95B1ED5FB78000789DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F53034D698566D7AA2CD44D /* Pods-Redcupa_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WU4JCC59KB;
@@ -428,6 +638,7 @@
 		};
 		C5DDE95C1ED5FB78000789DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECFEC0840C1DB9485A9F9D4 /* Pods-Redcupa_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WU4JCC59KB;
@@ -441,6 +652,7 @@
 		};
 		C5DDE95E1ED5FB78000789DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F611034C20A959AF68BA50E /* Pods-Redcupa_iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +668,7 @@
 		};
 		C5DDE95F1ED5FB78000789DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94203BA67EC07EA308C3DAA1 /* Pods-Redcupa_iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +684,7 @@
 		};
 		C5DDE9611ED5FB78000789DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE137E69B966B8C65A996DD /* Pods-Redcupa_iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WU4JCC59KB;
@@ -485,6 +699,7 @@
 		};
 		C5DDE9621ED5FB78000789DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DDE844252C1A27F9F7A492 /* Pods-Redcupa_iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WU4JCC59KB;
@@ -516,6 +731,7 @@
 				C5DDE95C1ED5FB78000789DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5DDE95D1ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +740,7 @@
 				C5DDE95F1ED5FB78000789DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5DDE9601ED5FB78000789DE /* Build configuration list for PBXNativeTarget "Redcupa_iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +749,7 @@
 				C5DDE9621ED5FB78000789DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
