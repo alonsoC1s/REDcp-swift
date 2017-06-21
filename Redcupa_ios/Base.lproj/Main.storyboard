@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kht-gT-Etp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="-1284"/>
+            <point key="canvasLocation" x="586" y="-436"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rpo-vu-8Di">
@@ -57,7 +57,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdG-mL-2BB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1554" y="-422"/>
+            <point key="canvasLocation" x="-3391" y="-435"/>
         </scene>
         <!--Item-->
         <scene sceneID="oKs-GA-ekW">
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kh0-9R-O6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847" y="287"/>
+            <point key="canvasLocation" x="-991" y="-436"/>
         </scene>
         <!--Item-->
         <scene sceneID="aLo-Lo-7F8">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uc6-XW-h8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="-486"/>
+            <point key="canvasLocation" x="-220" y="-436"/>
         </scene>
         <!--cola-->
         <scene sceneID="74R-GN-qX9">
@@ -124,7 +124,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeW-tO-Cmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-740" y="-486"/>
+            <point key="canvasLocation" x="-1668" y="-436"/>
         </scene>
         <!--New Post Controller-->
         <scene sceneID="6h4-jb-fr6">
@@ -179,6 +179,7 @@
                                 <state key="normal" title="Create new event!"/>
                                 <connections>
                                     <action selector="didTapCreateEvent:" destination="H7X-YI-d0x" eventType="touchUpInside" id="OnD-5m-cQn"/>
+                                    <segue destination="JOX-fy-4yD" kind="show" identifier="ReturnFromNewPost" id="hCw-3c-LP8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-eI-LHM">
@@ -204,14 +205,13 @@
                     </view>
                     <connections>
                         <outlet property="eventContentField" destination="H5R-gA-1Zi" id="wOr-Ka-hTl"/>
-                        <outlet property="eventDatePicker" destination="XSk-WL-l6b" id="Mmf-jj-vpY"/>
+                        <outlet property="eventIsPrivateSwitch" destination="Bsl-wf-x12" id="oE6-TL-hR2"/>
                         <outlet property="eventNameField" destination="8f1-va-MoU" id="blp-R1-j2z"/>
-                        <outlet property="eventPrivate" destination="Bsl-wf-x12" id="Xdq-YW-o2O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kuh-iz-9px" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1546.4000000000001" y="-1791.4542728635683"/>
+            <point key="canvasLocation" x="-2436" y="-1200"/>
         </scene>
         <!--Map-->
         <scene sceneID="9V1-XR-PqM">
@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVr-fV-Do3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807" y="-1284"/>
+            <point key="canvasLocation" x="-2436" y="-436"/>
         </scene>
     </scenes>
 </document>

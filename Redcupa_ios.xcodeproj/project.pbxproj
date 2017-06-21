@@ -132,6 +132,16 @@
 			name = MyDataModels;
 			sourceTree = "<group>";
 		};
+		C5441F871EFB3EDA00AA3113 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5441F751EF84E9500AA3113 /* SecondViewController.swift */,
+				C5DDE9371ED5FB78000789DE /* MyMapView.swift */,
+				C5441F851EFA500100AA3113 /* NewPostController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C5DDE9291ED5FB78000789DE = {
 			isa = PBXGroup;
 			children = (
@@ -158,9 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				C5441F7C1EF9E7AB00AA3113 /* MyDataModels */,
-				C5DDE9371ED5FB78000789DE /* MyMapView.swift */,
-				C5441F751EF84E9500AA3113 /* SecondViewController.swift */,
-				C5441F851EFA500100AA3113 /* NewPostController.swift */,
+				C5441F871EFB3EDA00AA3113 /* ViewControllers */,
 				C5DDE9391ED5FB78000789DE /* Main.storyboard */,
 				C5DDE9631ED5FCDE000789DE /* Support Files */,
 			);
