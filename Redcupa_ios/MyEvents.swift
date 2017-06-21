@@ -20,7 +20,7 @@ class Event: NSObject {
     //public var attendance_list: Dictionary<String, String>
     //public var invitee_list: Dictionary<String, String>
     public var eventPublic: Bool!
-    public var eventDate: MyDa te!
+    public var eventDate: MyDate!
     
     init(name: String, content: String, userID: String, lat: Double, lng: Double, eventPublic: Bool, eventID: String, year: Int, month: Int, day: Int, hour: Int, minute: Int){
         self.userID = userID
@@ -35,7 +35,10 @@ class Event: NSObject {
         
     }
     
-    init?(snapshot: FIRDataSnapshot){
+    public func getLatitude() -> Double{ return self.eventLatitude}
+    public func getLongitude() -> Double{ return self.eventLongitude}
+    
+    init?(snapshot: DataSnapshot){
         
     }
     
