@@ -110,7 +110,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4dL-bg-3TE" id="5QE-qF-8tc">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -178,7 +178,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create new event!"/>
                                 <connections>
-                                    <action selector="CreateNewPost:" destination="H7X-YI-d0x" eventType="touchUpInside" id="YbH-ue-cdV"/>
+                                    <action selector="didTapCreateEvent:" destination="H7X-YI-d0x" eventType="touchUpInside" id="OnD-5m-cQn"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-eI-LHM">
@@ -203,11 +203,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="CreateNewPost" destination="9Fm-CD-xle" id="lHu-PI-eVM"/>
-                        <outlet property="DatePicker" destination="XSk-WL-l6b" id="EMW-b4-9Nu"/>
-                        <outlet property="EventContentField" destination="H5R-gA-1Zi" id="N5H-vz-QNM"/>
-                        <outlet property="EventNameField" destination="8f1-va-MoU" id="mEf-uC-Xcx"/>
-                        <outlet property="EventPrivateSwitch" destination="Bsl-wf-x12" id="m7d-3c-yhT"/>
+                        <outlet property="eventContentField" destination="H5R-gA-1Zi" id="wOr-Ka-hTl"/>
+                        <outlet property="eventDatePicker" destination="XSk-WL-l6b" id="Mmf-jj-vpY"/>
+                        <outlet property="eventNameField" destination="8f1-va-MoU" id="blp-R1-j2z"/>
+                        <outlet property="eventPrivate" destination="Bsl-wf-x12" id="Xdq-YW-o2O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kuh-iz-9px" userLabel="First Responder" sceneMemberID="firstResponder"/>

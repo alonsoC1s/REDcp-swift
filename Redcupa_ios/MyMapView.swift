@@ -105,7 +105,7 @@ class MyMapView: UIViewController, FUIAuthDelegate {
             print("Place attributions \(String(describing: place.attributions))")
             
             self.pickedCoordinates = place.coordinate
-        
+            
             //Redirects to newPost screen and passes the coordinates selected
             self.performSegue(withIdentifier: "NewPostSegue", sender: self)
             
@@ -120,6 +120,7 @@ class MyMapView: UIViewController, FUIAuthDelegate {
             dvc.passedCoordinates = self.pickedCoordinates
         }
     }
+    
     
     func checkLoggedIn() {
         Auth.auth().addStateDidChangeListener { auth, user in
