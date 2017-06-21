@@ -12,6 +12,7 @@
 		C5441F761EF84E9500AA3113 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F751EF84E9500AA3113 /* SecondViewController.swift */; };
 		C5441F7E1EF9E7BD00AA3113 /* MyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F7D1EF9E7BD00AA3113 /* MyEvents.swift */; };
 		C5441F801EF9F2D400AA3113 /* MyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F7F1EF9F2D400AA3113 /* MyDate.swift */; };
+		C5441F821EFA2A6900AA3113 /* NewPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F811EFA2A6900AA3113 /* NewPostController.swift */; };
 		C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9351ED5FB78000789DE /* AppDelegate.swift */; };
 		C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9371ED5FB78000789DE /* MyMapView.swift */; };
 		C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9391ED5FB78000789DE /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		C5441F751EF84E9500AA3113 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C5441F7D1EF9E7BD00AA3113 /* MyEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEvents.swift; sourceTree = "<group>"; };
 		C5441F7F1EF9F2D400AA3113 /* MyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDate.swift; sourceTree = "<group>"; };
+		C5441F811EFA2A6900AA3113 /* NewPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostController.swift; sourceTree = "<group>"; };
 		C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redcupa_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DDE9351ED5FB78000789DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DDE9371ED5FB78000789DE /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
@@ -156,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				C5441F7C1EF9E7AB00AA3113 /* MyDataModels */,
-				C5DDE9351ED5FB78000789DE /* AppDelegate.swift */,
 				C5DDE9371ED5FB78000789DE /* MyMapView.swift */,
+				C5441F811EFA2A6900AA3113 /* NewPostController.swift */,
 				C5441F751EF84E9500AA3113 /* SecondViewController.swift */,
 				C5DDE9391ED5FB78000789DE /* Main.storyboard */,
 				C5DDE9631ED5FCDE000789DE /* Support Files */,
@@ -186,6 +188,7 @@
 		C5DDE9631ED5FCDE000789DE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5DDE9351ED5FB78000789DE /* AppDelegate.swift */,
 				C5FCAFB11EE0673F00BA7C6F /* Redcupa_ios.entitlements */,
 				C5DDE93C1ED5FB78000789DE /* Assets.xcassets */,
 				C5DDE93E1ED5FB78000789DE /* LaunchScreen.storyboard */,
@@ -488,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5441F821EFA2A6900AA3113 /* NewPostController.swift in Sources */,
 				C5441F7E1EF9E7BD00AA3113 /* MyEvents.swift in Sources */,
 				C5441F761EF84E9500AA3113 /* SecondViewController.swift in Sources */,
 				C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */,

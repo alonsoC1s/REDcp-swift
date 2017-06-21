@@ -15,23 +15,29 @@ import FirebaseFacebookAuthUI
 import FBSDKCoreKit
 import FBSDKLoginKit
 import GoogleMaps
-import Material
-
+import MaterialComponents
+import GooglePlaces
+import GooglePlacePicker
 
 class MyMapView: UIViewController, FUIAuthDelegate {
+    
+    var pickedCoordinates: CLLocationCoordinate2D?
     
     var ref_events : DatabaseReference!
     var events = [Event]()
     var googleMapView: GMSMapView?
+    let customBlue = UIColor(red: 25/255, green: 118/255, blue: 210/255, alpha: 1)
     
     override func loadView() {
         
         self.ref_events = Database.database().reference().child("Events_parent")
 
-    
+        
+        //TODO: Center map on current location, not hardcoded LatLng
         let camera = GMSCameraPosition.camera(withLatitude: 19.0412967, longitude: -98.20619959999999, zoom: 11)
         let googleMapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        googleMapView.isMyLocationEnabled = true
+        
+        //googleMapView.isMyLocationEnabled = true
         
  
         //Firebase querying for event data. Cannot be done on outside function as marker drawing is 
@@ -55,6 +61,7 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         //Note: .observe() functions are called asynchronous, so called last.
         
         
+        
         self.view = googleMapView
     }
  
@@ -66,6 +73,52 @@ class MyMapView: UIViewController, FUIAuthDelegate {
 
         checkLoggedIn()
         
+        //Drawing FAB
+        let floatingButton = MDCFloatingButton()
+        floatingButton.backgroundColor = customBlue
+        floatingButton.setTitle("+", for: .normal)
+        floatingButton.setTitleColor( UIColor.white, for: .normal)
+        floatingButton.sizeToFit()
+        floatingButton.addTarget(self, action: #selector(fabClicked), for: .touchUpInside)
+        self.view.addSubview(floatingButton)
+        
+    }
+    
+    func fabClicked(){
+        let config = GMSPlacePickerConfig(viewport: nil)
+        let placePicker = GMSPlacePicker(config: config)
+        
+        placePicker.pickPlace(callback: { (place, error) -> Void in
+            if let error = error {
+                print("Pick Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let place = place else {
+                print("No place selected")
+                return
+            }
+            //Called when place selected correctly
+            print("Place name \(place.name)")
+            print(place.coordinate)
+            print("Place address \(String(describing: place.formattedAddress))")
+            print("Place attributions \(String(describing: place.attributions))")
+            
+            self.pickedCoordinates = place.coordinate
+        
+            //Redirects to newPost screen and passes the coordinates selected
+            self.performSegue(withIdentifier: "NewPostSegue", sender: self)
+            
+        })
+    }
+    
+    //Passes the coordinates picked by place picker through segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NewPostSegue" && self.pickedCoordinates != nil {
+            
+            let dvc = segue.destination as! NewPostController
+            dvc.passedCoordinates = self.pickedCoordinates
+        }
     }
     
     func checkLoggedIn() {

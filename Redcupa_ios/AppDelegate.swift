@@ -20,15 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Configuring Firebase
         FirebaseApp.configure()
         
+        //Configuring Facebook SDK
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        //Configuring Google Maps and Google Places
         GMSServices.provideAPIKey("AIzaSyBYakSnyJ45UrAVJB8yeIUhUUacjhA-eNg")
-        GMSPlacesClient.provideAPIKey("AIzaSyBYakSnyJ45UrAVJB8yeIUhUUacjhA-eNg")
+        GMSPlacesClient.provideAPIKey("AIzaSyCtJ0s26Lx-N4YhTIFay_4RbpvoA-sexpY")
         
-        
+
         
         
         return true
