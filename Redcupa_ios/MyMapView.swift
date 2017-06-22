@@ -42,6 +42,7 @@ class MyMapView: UIViewController, FUIAuthDelegate {
  
         //Firebase querying for event data. Cannot be done on outside function as marker drawing is 
         // only supported from within loadView()
+        
         ref_events.observe(.childAdded, with: { (snapshot) in
             
             

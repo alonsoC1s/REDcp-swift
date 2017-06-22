@@ -14,6 +14,8 @@
 		C5441F801EF9F2D400AA3113 /* MyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F7F1EF9F2D400AA3113 /* MyDate.swift */; };
 		C5441F841EFA4C8100AA3113 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5441F831EFA4C8100AA3113 /* GoogleService-Info.plist */; };
 		C5441F861EFA500100AA3113 /* NewPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F851EFA500100AA3113 /* NewPostController.swift */; };
+		C5441F891EFC50F000AA3113 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F881EFC50F000AA3113 /* UserProfileViewController.swift */; };
+		C5441F8C1EFC60DE00AA3113 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C5441F8B1EFC60DE00AA3113 /* background.png */; };
 		C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9351ED5FB78000789DE /* AppDelegate.swift */; };
 		C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9371ED5FB78000789DE /* MyMapView.swift */; };
 		C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9391ED5FB78000789DE /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		C5441F7F1EF9F2D400AA3113 /* MyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDate.swift; sourceTree = "<group>"; };
 		C5441F831EFA4C8100AA3113 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5441F851EFA500100AA3113 /* NewPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostController.swift; sourceTree = "<group>"; };
+		C5441F881EFC50F000AA3113 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		C5441F8B1EFC60DE00AA3113 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redcupa_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DDE9351ED5FB78000789DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DDE9371ED5FB78000789DE /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
@@ -137,9 +141,18 @@
 			children = (
 				C5441F751EF84E9500AA3113 /* SecondViewController.swift */,
 				C5DDE9371ED5FB78000789DE /* MyMapView.swift */,
+				C5441F881EFC50F000AA3113 /* UserProfileViewController.swift */,
 				C5441F851EFA500100AA3113 /* NewPostController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C5441F8A1EFC609600AA3113 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5441F8B1EFC60DE00AA3113 /* background.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C5DDE9291ED5FB78000789DE = {
@@ -167,6 +180,7 @@
 		C5DDE9341ED5FB78000789DE /* Redcupa_ios */ = {
 			isa = PBXGroup;
 			children = (
+				C5441F8A1EFC609600AA3113 /* Resources */,
 				C5441F7C1EF9E7AB00AA3113 /* MyDataModels */,
 				C5441F871EFB3EDA00AA3113 /* ViewControllers */,
 				C5DDE9391ED5FB78000789DE /* Main.storyboard */,
@@ -334,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DDE9401ED5FB78000789DE /* LaunchScreen.storyboard in Resources */,
+				C5441F8C1EFC60DE00AA3113 /* background.png in Resources */,
 				C5441F841EFA4C8100AA3113 /* GoogleService-Info.plist in Resources */,
 				C5DDE93D1ED5FB78000789DE /* Assets.xcassets in Resources */,
 				C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */,
@@ -503,6 +518,7 @@
 				C5441F761EF84E9500AA3113 /* SecondViewController.swift in Sources */,
 				C5441F861EFA500100AA3113 /* NewPostController.swift in Sources */,
 				C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */,
+				C5441F891EFC50F000AA3113 /* UserProfileViewController.swift in Sources */,
 				C5441F801EF9F2D400AA3113 /* MyDate.swift in Sources */,
 				C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */,
 			);
