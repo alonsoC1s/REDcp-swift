@@ -22,6 +22,7 @@ class Event: NSObject {
     public var eventPublic: Bool!
     public var eventDate: MyDate!
     
+    /*
     init(name: String, content: String, userID: String, lat: Double, lng: Double, eventPublic: Bool, eventID: String, year: Int, month: Int, day: Int, hour: Int, minute: Int){
         self.userID = userID
         self.eventName = name
@@ -34,13 +35,27 @@ class Event: NSObject {
         self.eventDate = MyDate(year: year,month: month,day: day,hour: hour,minute: minute)
         
     }
+ */
+    
+    init?(snapshot: DataSnapshot){
+        if let dictionary = snapshot.value as? [String: AnyObject]{
+            self.eventLatitude = dictionary["EventLatitude"] as! Double
+            self.eventLongitude = dictionary["EventLongitude"] as! Double
+            self.eventName = dictionary["EventName"] as! String
+            self.eventContent = dictionary["EventContent"] as! String
+            self.userID = dictionary["userID"] as! String
+            self.eventID = dictionary["eventID"] as! String
+            self.eventPublic = dictionary["eventPublic"] as! Bool
+            self.eventDate = dictionary["eventDate"] as! MyDate
+        }
+    }
+    
     
     public func getLatitude() -> Double{ return self.eventLatitude}
     public func getLongitude() -> Double{ return self.eventLongitude}
+    public func getEventName() -> String{ return self.eventName}
+    public func getEventContent() -> String{ return self.eventContent} 
     
-    init?(snapshot: DataSnapshot){
-        
-    }
     
 
     

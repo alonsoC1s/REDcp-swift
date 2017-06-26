@@ -10,7 +10,7 @@ import UIKit
 import FirebaseFacebookAuthUI
 import FirebaseAuth
 
-class SecondViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,11 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func logMeOut(_ sender: UIButton) {
+    @IBAction func terminateAllSessions(_ sender: UIButton) {
         try! Auth.auth().signOut()
-    }
+
+            }
+
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

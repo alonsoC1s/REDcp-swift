@@ -15,22 +15,24 @@ import MaterialComponents
 class NewPostController: UIViewController {
     
     var ref_events : DatabaseReference!
+    var ref_Users : DatabaseReference!
     
     @IBOutlet weak var eventNameField: UITextField!
     @IBOutlet weak var eventContentField: UITextField!
     @IBOutlet weak var eventIsPrivateSwitch: UISwitch!
+    @IBOutlet weak var usernameLabel: UILabel!
     
     var passedCoordinates: CLLocationCoordinate2D?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ref_events = Database.database().reference().child("Events_parent")
+        self.ref_Users = Database.database().reference().child("Users_parent")
 
-        //Manging date picker
-        
-        
-        print("ya se armoo")
-        print(passedCoordinates!)
+        //Managing date picker
+    
+        //Updating UI for user data
+        populateUserData(firebaseUID: getCurrentFirebaseID())
         
     }
 
@@ -104,6 +106,22 @@ class NewPostController: UIViewController {
     func getCurrentFirebaseID() -> String{
         let userID = Auth.auth().currentUser?.uid
         return userID!
+    }
+    
+    func populateUserData(firebaseUID: String){
+        
+        ref_Users.child(firebaseUID).observe(.value, with:{
+            (snapshot) in
+            let myUser = snapshot.value as! [String: AnyObject]
+            let myUserFirstName = myUser["displayName"] as! String
+            let myUserSecondName = myUser["displaySecondName"] as! String
+            let myUsername = myUserFirstName + " " + myUserSecondName
+            
+            print(myUsername)
+            self.usernameLabel.text = myUsername
+            
+        }, withCancel: nil)
+        
     }
 
 }

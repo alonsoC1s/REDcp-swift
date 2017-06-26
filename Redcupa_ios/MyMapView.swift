@@ -37,7 +37,7 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: 19.0412967, longitude: -98.20619959999999, zoom: 11)
         let googleMapView = GMSMapView.map(withFrame: .zero, camera: camera)
         
-        //googleMapView.isMyLocationEnabled = true
+        googleMapView.isMyLocationEnabled = true
         
  
         //Firebase querying for event data. Cannot be done on outside function as marker drawing is 
@@ -52,6 +52,8 @@ class MyMapView: UIViewController, FUIAuthDelegate {
             let eventName = event["eventName"] as! String
             
             let position = CLLocationCoordinate2D(latitude: eventLat, longitude: eventLng)
+            
+            //Create marker object and assign it to the map
             let marker = GMSMarker(position: position)
             marker.title = eventName
             
@@ -99,12 +101,8 @@ class MyMapView: UIViewController, FUIAuthDelegate {
                 print("No place selected")
                 return
             }
-            //Called when place selected correctly
-            print("Place name \(place.name)")
-            print(place.coordinate)
-            print("Place address \(String(describing: place.formattedAddress))")
-            print("Place attributions \(String(describing: place.attributions))")
             
+            //Called when place selected correctly
             self.pickedCoordinates = place.coordinate
             
             //Redirects to newPost screen and passes the coordinates selected

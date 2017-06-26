@@ -17,21 +17,23 @@ class UserProfileViewController: TwitterProfileViewController {
     var favoritesTableView: UITableView!
     var ref_Users: DatabaseReference!
     
+    //UI Elements
     var custom: UIView!
     var label: UILabel!
     
-    
+    //Defines how many tabs there are
     override func numberOfSegments() -> Int {
-        return 2
+        return 1
     }
     
     override func segmentTitle(forSegment index: Int) -> String {
-        return "Segment \(index)"
+        return "Posts"
     }
     
     override func prepareForLayout() {
-        //Establish Firebase db reference 
+        //Establish Firebase db and storage reference
         self.ref_Users = Database.database().reference().child("Users_parent")
+        
         
         populateUserData(firebaseUID: getCurrentFirebaseID())
         
@@ -45,11 +47,14 @@ class UserProfileViewController: TwitterProfileViewController {
         let _favoritesTableView = UITableView(frame: CGRect.zero, style: .plain)
         self.favoritesTableView = _favoritesTableView
         
+
+        
         self.setupTables()
     }
     
     func populateUserData(firebaseUID: String){
         
+        //Firebase user querying
         ref_Users.child(firebaseUID).observe(.value, with:{
             (snapshot) in
             let myUser = snapshot.value as! [String: AnyObject]
@@ -59,7 +64,11 @@ class UserProfileViewController: TwitterProfileViewController {
             
             self.username = myUsername
             
+            
         }, withCancel: nil)
+        
+        //Retrieving user banner and profile picture from firebase storage
+
         
     }
 
@@ -67,8 +76,9 @@ class UserProfileViewController: TwitterProfileViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.locationString = "Mexico"
-        self.profileImage = UIImage.init(named: "icon.png")
+        self.profileImage = UIImage.init(named: "icon.jpg")
     }
     
     override func scrollView(forSegment index: Int) -> UIScrollView {
