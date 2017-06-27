@@ -57,6 +57,7 @@ class UserProfileViewController: TwitterProfileViewController {
         //Firebase user querying
         ref_Users.child(firebaseUID).observe(.value, with:{
             (snapshot) in
+            
             let myUser = snapshot.value as! [String: AnyObject]
             let myUserFirstName = myUser["displayName"] as! String
             let myUserSecondName = myUser["displaySecondName"] as! String

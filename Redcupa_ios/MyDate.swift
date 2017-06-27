@@ -7,19 +7,18 @@
 //
 
 import Foundation
-class MyDate: NSObject {
+class MyDate: NSObject{
     public var year: Int
     public var month: Int
     public var day: Int
     public var hour: Int
     public var minute: Int
     
-    init(year: Int, month: Int, day: Int, hour: Int, minute: Int){
-        self.year = year
-        self.month = month
-        self.day = day
-        self.hour = hour
-        self.minute = minute 
-
+    init(dateDictionary: [String:AnyObject] ){
+        self.year = dateDictionary["year"] as! Int
+        self.month = dateDictionary["month"] as! Int
+        self.day = dateDictionary["day"] as! Int
+        self.hour = dateDictionary["hours"] as! Int
+        self.minute = dateDictionary["minutes"] as! Int 
     }
 }

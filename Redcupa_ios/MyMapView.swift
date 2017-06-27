@@ -45,19 +45,18 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         
         ref_events.observe(.childAdded, with: { (snapshot) in
             
+            if let event = Event(snapshot: snapshot){
             
-            let event = snapshot.value as! [String:AnyObject]
-            let eventLat = event["eventLatitude"] as! Double
-            let eventLng = event["eventLongitude"] as! Double
-            let eventName = event["eventName"] as! String
             
-            let position = CLLocationCoordinate2D(latitude: eventLat, longitude: eventLng)
+                let position = CLLocationCoordinate2D(latitude: event.getLatitude(), longitude: event.getLongitude())
             
             //Create marker object and assign it to the map
-            let marker = GMSMarker(position: position)
-            marker.title = eventName
+                let marker = GMSMarker(position: position)
+                marker.title = event.getEventName()
             
-            marker.map = googleMapView
+                marker.map = googleMapView
+            }
+            
             
         }, withCancel: nil)
         //End Firebase querying. 

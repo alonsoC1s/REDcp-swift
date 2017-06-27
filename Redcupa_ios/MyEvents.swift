@@ -39,14 +39,14 @@ class Event: NSObject {
     
     init?(snapshot: DataSnapshot){
         if let dictionary = snapshot.value as? [String: AnyObject]{
-            self.eventLatitude = dictionary["EventLatitude"] as! Double
-            self.eventLongitude = dictionary["EventLongitude"] as! Double
-            self.eventName = dictionary["EventName"] as! String
-            self.eventContent = dictionary["EventContent"] as! String
+            self.eventLatitude = dictionary["eventLatitude"] as! Double
+            self.eventLongitude = dictionary["eventLongitude"] as! Double
+            self.eventName = dictionary["eventName"] as! String
+            self.eventContent = dictionary["eventContent"] as! String
             self.userID = dictionary["userID"] as! String
             self.eventID = dictionary["eventID"] as! String
             self.eventPublic = dictionary["eventPublic"] as! Bool
-            self.eventDate = dictionary["eventDate"] as! MyDate
+            //self.eventDate = dictionary["eventDate"] as! MyDate
         }
     }
     
