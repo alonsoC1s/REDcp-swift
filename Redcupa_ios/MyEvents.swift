@@ -54,7 +54,8 @@ class Event: NSObject {
     public func getLatitude() -> Double{ return self.eventLatitude}
     public func getLongitude() -> Double{ return self.eventLongitude}
     public func getEventName() -> String{ return self.eventName}
-    public func getEventContent() -> String{ return self.eventContent} 
+    public func getEventContent() -> String{ return self.eventContent}
+    public func getAuthorUID() -> String { return self.userID } 
     
     
 

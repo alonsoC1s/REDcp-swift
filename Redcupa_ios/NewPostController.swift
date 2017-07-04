@@ -11,12 +11,15 @@ import GoogleMaps
 import Firebase
 import FirebaseDatabase
 import MaterialComponents
+import FirebaseStorage
+import FirebaseStorageUI
 
 class NewPostController: UIViewController {
     
     var ref_events : DatabaseReference!
     var ref_Users : DatabaseReference!
     
+    @IBOutlet weak var AuthorImage: UIImageView!
     @IBOutlet weak var eventNameField: UITextField!
     @IBOutlet weak var eventContentField: UITextField!
     @IBOutlet weak var eventIsPrivateSwitch: UISwitch!
@@ -31,8 +34,9 @@ class NewPostController: UIViewController {
 
         //Managing date picker
     
-        //Updating UI for user data
+        //Updating UI with user data
         populateUserData(firebaseUID: getCurrentFirebaseID())
+        
         
     }
 
@@ -76,7 +80,6 @@ class NewPostController: UIViewController {
             //Post to firebase
             self.ref_events.child(pushKey).setValue(post)
         } else{
-            //Create dictionary. Event is public
             
             let post : [String : Any] = ["eventName": title,
                                          "eventContent": content,
@@ -122,6 +125,12 @@ class NewPostController: UIViewController {
             
         }, withCancel: nil)
         
+        
+        //Getting user image
+        let fbStorage = Storage.storage().reference()
+        let storRef = fbStorage.child(firebaseUID).child("profile_picture.jpg")
+        
+        self.AuthorImage.sd_setImage(with: storRef)
     }
 
 }

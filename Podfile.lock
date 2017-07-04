@@ -24,6 +24,9 @@ PODS:
   - Firebase/Performance (4.0.2):
     - Firebase/Core
     - FirebasePerformance (= 1.0.2)
+  - Firebase/Storage (4.0.2):
+    - Firebase/Core
+    - FirebaseStorage (= 2.0.0)
   - FirebaseAnalytics (4.0.1):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -51,11 +54,18 @@ PODS:
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.1)
+  - FirebaseStorage (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseUI/Auth (4.1.1):
     - Firebase/Auth
   - FirebaseUI/Facebook (4.1.1):
     - FBSDKLoginKit (~> 4.0)
     - FirebaseUI/Auth
+  - FirebaseUI/Storage (4.1.1):
+    - Firebase/Storage
+    - SDWebImage (~> 4.0)
   - GoogleMaps (2.3.1):
     - GoogleMaps/Maps (= 2.3.1)
   - GoogleMaps/Base (2.3.1)
@@ -360,6 +370,9 @@ PODS:
     - MaterialComponents/private/Application
   - MDFTextAccessibility (1.2.0)
   - Protobuf (3.3.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
@@ -370,7 +383,9 @@ DEPENDENCIES:
   - Firebase/Crash
   - Firebase/Database
   - Firebase/Performance
+  - Firebase/Storage
   - FirebaseUI/Facebook
+  - FirebaseUI/Storage
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
@@ -389,6 +404,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   FirebasePerformance: 51a400fba288e43258b94128f2a649faeec5d909
+  FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
   FirebaseUI: 5ebebe2c096c71f20abd1d43d0388958373bdaa0
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
@@ -399,8 +415,9 @@ SPEC CHECKSUMS:
   MaterialComponents: 18ef3524558622476f3edd7c1579efbca431c5dd
   MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 68dfccf766ed2769d4f77c9e8ed917c1ba2c9529
+PODFILE CHECKSUM: a5b105c674542696d6acc6932811bc862137cb21
 
 COCOAPODS: 1.2.1

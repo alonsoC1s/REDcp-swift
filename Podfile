@@ -10,6 +10,9 @@ pod 'Firebase/Database’
 pod ‘Firebase/Auth’
 pod 'Firebase/Crash'
 pod 'Firebase/Performance'
+pod 'Firebase/Storage'
+pod 'FirebaseUI/Storage'
+
 
 
 pod 'FBSDKCoreKit’

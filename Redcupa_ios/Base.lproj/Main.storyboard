@@ -150,7 +150,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-eI-LHM">
-                                <rect key="frame" x="16" y="70" width="130" height="119"/>
+                                <rect key="frame" x="16" y="70" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-6D-kJp">
@@ -170,7 +170,7 @@
                                     <navigationItem title="Create new event" id="BrB-Wp-m6b">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="MOF-22-IbF">
                                             <connections>
-                                                <segue destination="03J-dY-kpH" kind="show" id="pHU-aG-OSk"/>
+                                                <segue destination="03J-dY-kpH" kind="show" identifier="ReturnFromNewPost" id="pHU-aG-OSk"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -180,6 +180,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="AuthorImage" destination="rtj-eI-LHM" id="5vs-5D-Rth"/>
                         <outlet property="eventContentField" destination="H5R-gA-1Zi" id="wOr-Ka-hTl"/>
                         <outlet property="eventIsPrivateSwitch" destination="Bsl-wf-x12" id="oE6-TL-hR2"/>
                         <outlet property="eventNameField" destination="8f1-va-MoU" id="blp-R1-j2z"/>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CC7EEE50AD9F4EC2B4C805F /* Pods_Redcupa_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F102711477212A68CA3FF26 /* Pods_Redcupa_iosTests.framework */; };
 		A8F7CF8469D342EE3E51AF5A /* Pods_Redcupa_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC951B224B84576875C91984 /* Pods_Redcupa_ios.framework */; };
+		C53796951F056CB40086B379 /* LoginControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53796941F056CB40086B379 /* LoginControllerViewController.swift */; };
 		C5441F761EF84E9500AA3113 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F751EF84E9500AA3113 /* SettingsViewController.swift */; };
 		C5441F7E1EF9E7BD00AA3113 /* MyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F7D1EF9E7BD00AA3113 /* MyEvents.swift */; };
 		C5441F801EF9F2D400AA3113 /* MyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F7F1EF9F2D400AA3113 /* MyDate.swift */; };
@@ -19,6 +20,7 @@
 		C5441F8F1EFC661C00AA3113 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F8E1EFC661C00AA3113 /* NetworkUtils.swift */; };
 		C5441F911F0191C800AA3113 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5441F901F0191C800AA3113 /* icon.jpg */; };
 		C5441F931F01A32D00AA3113 /* NearbyEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5441F921F01A32D00AA3113 /* NearbyEventsController.swift */; };
+		C5B493FE1F0B481D002D2071 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B493FD1F0B481D002D2071 /* EventDetailsViewController.swift */; };
 		C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9351ED5FB78000789DE /* AppDelegate.swift */; };
 		C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDE9371ED5FB78000789DE /* MyMapView.swift */; };
 		C5DDE93B1ED5FB78000789DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DDE9391ED5FB78000789DE /* Main.storyboard */; };
@@ -54,6 +56,7 @@
 		5F53034D698566D7AA2CD44D /* Pods-Redcupa_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_ios/Pods-Redcupa_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		94203BA67EC07EA308C3DAA1 /* Pods-Redcupa_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosTests/Pods-Redcupa_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACE137E69B966B8C65A996DD /* Pods-Redcupa_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redcupa_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redcupa_iosUITests/Pods-Redcupa_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C53796941F056CB40086B379 /* LoginControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerViewController.swift; sourceTree = "<group>"; };
 		C5441F751EF84E9500AA3113 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C5441F7D1EF9E7BD00AA3113 /* MyEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEvents.swift; sourceTree = "<group>"; };
 		C5441F7F1EF9F2D400AA3113 /* MyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		C5441F8E1EFC661C00AA3113 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		C5441F901F0191C800AA3113 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		C5441F921F01A32D00AA3113 /* NearbyEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyEventsController.swift; sourceTree = "<group>"; };
+		C5B493FD1F0B481D002D2071 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		C5DDE9321ED5FB78000789DE /* Redcupa_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redcupa_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DDE9351ED5FB78000789DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DDE9371ED5FB78000789DE /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				C5441F881EFC50F000AA3113 /* UserProfileViewController.swift */,
 				C5441F851EFA500100AA3113 /* NewPostController.swift */,
 				C5441F921F01A32D00AA3113 /* NearbyEventsController.swift */,
+				C53796941F056CB40086B379 /* LoginControllerViewController.swift */,
+				C5B493FD1F0B481D002D2071 /* EventDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -538,8 +544,10 @@
 				C5441F761EF84E9500AA3113 /* SettingsViewController.swift in Sources */,
 				C5441F861EFA500100AA3113 /* NewPostController.swift in Sources */,
 				C5DDE9381ED5FB78000789DE /* MyMapView.swift in Sources */,
+				C53796951F056CB40086B379 /* LoginControllerViewController.swift in Sources */,
 				C5441F891EFC50F000AA3113 /* UserProfileViewController.swift in Sources */,
 				C5441F801EF9F2D400AA3113 /* MyDate.swift in Sources */,
+				C5B493FE1F0B481D002D2071 /* EventDetailsViewController.swift in Sources */,
 				C5DDE9361ED5FB78000789DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

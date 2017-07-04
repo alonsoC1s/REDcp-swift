@@ -11,6 +11,7 @@ import UIKit
 import Firebase
 import FirebaseAuthUI
 import FirebaseDatabase
+import FirebaseStorage
 import FirebaseFacebookAuthUI
 import FBSDKCoreKit
 import FBSDKLoginKit
@@ -24,9 +25,13 @@ class MyMapView: UIViewController, FUIAuthDelegate {
     var pickedCoordinates: CLLocationCoordinate2D?
     
     var ref_events : DatabaseReference!
+    var ref_users: DatabaseReference!
+    let imagePicker = UIImagePickerController()
     var events = [Event]()
     var googleMapView: GMSMapView?
     let customBlue = UIColor(red: 25/255, green: 118/255, blue: 210/255, alpha: 1)
+    let screen_width = UIScreen.main.bounds.width
+    let screen_height = UIScreen.main.bounds.height
     
     override func loadView() {
         
@@ -72,8 +77,8 @@ class MyMapView: UIViewController, FUIAuthDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         checkLoggedIn()
+        
         
         //Drawing FAB
         let floatingButton = MDCFloatingButton()
@@ -82,6 +87,11 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         floatingButton.setTitleColor( UIColor.white, for: .normal)
         floatingButton.sizeToFit()
         floatingButton.addTarget(self, action: #selector(fabClicked), for: .touchUpInside)
+        
+        //Constraints
+        floatingButton.translatesAutoresizingMaskIntoConstraints = false
+        floatingButton.frame = CGRect(x: (screen_width - 75), y: (screen_height - 120) , width: floatingButton.frame.width + 5, height: floatingButton.frame.height + 5)
+        
         self.view.addSubview(floatingButton)
         
     }
@@ -119,8 +129,10 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         }
     }
     
+    //--------------------
     
     func checkLoggedIn() {
+        
         Auth.auth().addStateDidChangeListener { auth, user in
             if user != nil {
                 
@@ -132,7 +144,6 @@ class MyMapView: UIViewController, FUIAuthDelegate {
     }
     
     func login() {
-        //TODO: Add users to database under Users_parent
         let authUI = FUIAuth.defaultAuthUI()
         authUI?.delegate = self
         
@@ -144,25 +155,50 @@ class MyMapView: UIViewController, FUIAuthDelegate {
         
         authUI?.providers = [facebookProvider]
         
+        //Presents the login View controller 
         let authViewController = authUI?.authViewController()
         self.present(authViewController!, animated: true, completion: nil)
     }
     
 
-    @IBAction func logOut(_ sender: UIButton) {
-        try! Auth.auth().signOut()
+    func getCurrentFirebaseID() -> String{
+        let userID = Auth.auth().currentUser?.uid
+        return userID!
     }
  
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        self.ref_users = Database.database().reference().child("Users_parent")
+            
         if error != nil {
             //Problem signing in
             login()
         }else {
-            //User is in! Here is where we code after signing in
+            //User is in! Creating user in Firebase database
+            let firebaseID = getCurrentFirebaseID()
+            //Requesting basic info from Facebook graph sdk
+            FBSDKGraphRequest(graphPath: "me" , parameters: ["fields":"id,first_name,last_name"]).start(completionHandler: {(connection, result,error) -> Void in
+                if error == nil{
+                    let fbDetails = result as! [String:Any]
+                    
+                    let newUser: [String: Any] = [
+                        "displayName" : fbDetails["first_name"] as! String,
+                        "displaySecondName":fbDetails["last_name"] as! String,
+                        "facebookUID" : fbDetails["id"] as! String,
+                        "userID": firebaseID,
+                        "level" : 0]
+                    
+                    //push to firebase
+                    self.ref_users.child(firebaseID).setValue(newUser)
+                    //open image picker to upload
+                    
+                }
+            })
             
         }
     }
+    
+    
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
         let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?

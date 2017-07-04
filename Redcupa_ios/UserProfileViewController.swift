@@ -9,6 +9,9 @@
 import UIKit
 import LFTwitterProfile
 import Firebase
+import FirebaseStorageUI
+import FirebaseStorage
+
 
 class UserProfileViewController: TwitterProfileViewController {
     
@@ -16,6 +19,7 @@ class UserProfileViewController: TwitterProfileViewController {
     var photosTableView: UITableView!
     var favoritesTableView: UITableView!
     var ref_Users: DatabaseReference!
+    
     
     //UI Elements
     var custom: UIView!
@@ -68,8 +72,13 @@ class UserProfileViewController: TwitterProfileViewController {
             
         }, withCancel: nil)
         
-        //Retrieving user banner and profile picture from firebase storage
-
+        
+        //Getting images from firebase 
+        let storage = Storage.storage()
+        let coverPictureRef = storage.reference().child(firebaseUID).child("cover_image.jpg")
+        let profilePictureRef = storage.reference().child(firebaseUID).child("profile_picture.jpg")
+        
+        
         
     }
 
@@ -80,7 +89,7 @@ class UserProfileViewController: TwitterProfileViewController {
         
         self.locationString = "Mexico"
         self.profileImage = UIImage.init(named: "icon.jpg")
-    }
+        }
     
     override func scrollView(forSegment index: Int) -> UIScrollView {
         switch index {
